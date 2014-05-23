@@ -1,0 +1,16 @@
+/* 
+ *
+ * 	userinterfac.es custom CSS
+ *	http://userinterfac.es
+ *	Built on top of Hyde & Poole.
+ *
+*/
+
+/* Custom theme */
+.ui-theme .sidebar {
+  background-color: #ac4142;
+}
+.ui-theme .content a,
+.ui-theme .related-posts li a:hover {
+  color: #ac4142;
+}

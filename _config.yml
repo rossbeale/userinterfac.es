@@ -3,22 +3,36 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
+permalink: 				/:categories/:title
+post_dirs: 				false
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            userinterfac.es
+tagline:          'Be inspired by in-depth analysis of great UI'
+description:      'In-depth analysis of example great interfaces to help inspire you.'
+authors:   				'Curated by <a href="https://twitter.com/rossbeale" target="_blank">@rossbeale</a>, <a href="https://twitter.com/piefoundry" target="_blank">@piefoundry</a> &amp; <a href="https://twitter.com/stevy_smith" target="_blank">@stevy_smith</a>.'
+url:              http://userinterfac.es
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Ross Beale'
+  url:            https://twitter.com/rossbeale
 
 paginate:         5
+paginate_path: 		":num"
+
+excerpt_separator: <!-- more -->
 
 # Custom vars
-version:          2.0.0
+version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/rossbeale/userinterfac.es
+
+sitemap:
+    file: 				'/sitemap.xml'
+    exclude:
+    - '/atom.xml'
+    include_posts:
+    - '/index.html'
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
