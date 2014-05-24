@@ -25,12 +25,6 @@ excerpt_separator: <!-- more -->
 github:
   repo:           https://github.com/rossbeale/userinterfac.es
 
-jekyll-press:
-  exclude: 'atom.xml'
-  js_options: {}
-  css_options: {}
-  html_options: {}
-
 sitemap:
     file: 				'/sitemap.xml'
     exclude:
