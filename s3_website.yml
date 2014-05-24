@@ -4,22 +4,11 @@ s3_bucket: userinterfac.es
 # See http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region for valid endpoints
 s3_endpoint: eu-west-1
 
-# exclude_from_upload:
-#   - those_folders_of_stuff
-#   - i_wouldnt_want_to_upload
+max_age:
+  "assets/*": 6000
+  "*": 300
 
-# s3_reduced_redundancy: true
-
-cloudfront_distribution_id: E2X78IQ6C12L2B
-
-# cloudfront_distribution_config:
-#   default_cache_behavior:
-#     min_TTL: <%= 60 * 60 * 24 %>
-#   aliases:
-#     quantity: 1
-#     items:
-#       CNAME: your.website.com
-
+cloudfront_distribution_id: <%= ENV['CLOUDFRONT_DISTRIBUTION_ID'] %>
 cloudfront_invalidate_root: true
 
 extensionless_mime_type: text/html
