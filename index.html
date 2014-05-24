@@ -14,7 +14,11 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }} {% if post.author %} &bull; <a href="{{ post.author_contact }}">{{ post.author }}</a>{% endif %}</span>
 
-    {{ post.excerpt }}
+    {% if post.content contains '<!-- more -->' %}
+      {{ post.excerpt | read_more: post.url }}
+    {% else %}
+      {{ post.content }}
+    {% endif %}
   </div>
   {% endfor %}
 </div>

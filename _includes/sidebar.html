@@ -24,6 +24,6 @@
 
     <!-- Footer -->
     <p>{{ site.authors }}</p>
-    <p>&copy; {{ site.time | date: '%Y' }} &bull; <a target="_blank" href="{{ site.github.repo }}">v{{ site.version }}</a></p>
+    <p>&copy; {{ site.time | date: '%Y' }} &bull; <a target="_blank" href="{{ site.github.repo }}">{{ site.data['hash'] }}</a></p>
   </div>
 </div>

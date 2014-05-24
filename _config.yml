@@ -22,11 +22,14 @@ paginate_path: 		":num"
 
 excerpt_separator: <!-- more -->
 
-# Custom vars
-version:          1.0.0
-
 github:
   repo:           https://github.com/rossbeale/userinterfac.es
+
+jekyll-press:
+  exclude: 'atom.xml'
+  js_options: {}
+  css_options: {}
+  html_options: {}
 
 sitemap:
     file: 				'/sitemap.xml'
